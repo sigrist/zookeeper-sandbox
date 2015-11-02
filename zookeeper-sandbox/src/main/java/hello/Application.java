@@ -19,7 +19,7 @@ public class Application {
 	
 	@RequestMapping("/")
 	public String home(HttpServletRequest request) {
-		return "Hello World! Header1 value: " + request.getHeader("header1") + "["+listener.getPort()+"]";
+		return "Hello World! Header1 value: " + request.getHeader("header1") + "["+listener.getPort()+"]\n";
 	}
 
 	public static void main(String[] args) {
