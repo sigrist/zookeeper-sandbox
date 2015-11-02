@@ -1,0 +1,19 @@
+server.port: 8484
+spring.application.name: zookeeper-sandbox-client
+
+spring.cloud.zookeeper:
+  dependencies:
+    application:
+      path: /zookeeper-sandbox
+      headers:
+        header1:
+          - value1
+          - value2
+          
+# Disable Eureka         
+ribbon:
+  eureka:
+    enabled: false
+    
+# Enable/Disable my WatcherListener
+hello.MyDependencyWatcherListener.enabled: false
