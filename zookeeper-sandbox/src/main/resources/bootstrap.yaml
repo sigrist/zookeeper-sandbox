@@ -1,1 +1,2 @@
-spring.cloud.zookeeper.connectString: 192.168.1.126:2181 
+spring.cloud.zookeeper.connectString: 172.24.40.82:2181
+
